@@ -5,7 +5,7 @@ The VSDBabySoC is a compact System-on-Chip (SoC) design that integrates a RISC-V
 
 ---
 
-## 📂 Repository Structure
+## 📂 Structure
 
 ```
 VSDBabySoC/
