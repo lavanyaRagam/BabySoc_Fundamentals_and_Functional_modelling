@@ -150,6 +150,12 @@ The simulation generates pre_synth_sim.vcd, viewable in GTKWave.
 ### View waveform:
 <img width="1920" height="923" alt="Screenshot from 2025-10-04 19-24-28" src="https://github.com/user-attachments/assets/1e9b0164-7627-4022-a24f-7206c2d33b69" />
 
+This GTKWave snapshot shows the **pre-synthesis simulation results** of the VSDBabySoC testbench.
+
+- The **input signals** (`CLK`, `reset`) and **output signals** (`OUT[9:0]`) are traced.  
+- The digital signals from the **RISC-V core** propagate correctly, driving the **DAC outputs**.  
+- The waveform confirms **functional correctness before synthesis**, ensuring that the RTL matches the expected behavior.
+
 
 ### 🔹 Post-Synthesis Simulation
 
