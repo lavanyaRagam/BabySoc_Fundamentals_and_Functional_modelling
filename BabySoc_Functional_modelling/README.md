@@ -173,6 +173,13 @@ cd output/post_synth_sim
 <img width="1920" height="923" alt="Screenshot from 2025-10-04 22-14-05" src="https://github.com/user-attachments/assets/63233909-b684-4db7-b7b6-f04464d4bef0" />
 
 
+This schematic represents the **post-synthesis netlist** of the VSDBabySoC design, generated using **Yosys**.
+
+- The **PLL (avsdpll)** takes inputs (`ENb_CP`, `ENb_VCO`, `REF`, `VCO_IN`) and generates a clock (`CLK`).  
+- The **RISC-V core (rvmyth)** receives the clock and reset signals, producing digital output (`RV_TO_DAC`).  
+- The **DAC (avsddac)** converts the core’s digital output into an analog signal (`OUT`) with reference voltage (`VREFH`).  
+- Finally, all modules are integrated at the **top-level SoC (vsdbabysoc)**, clearly showing the **data/control flow** between IPs.
+
 ## 📚 Summary
 
 The **VSDBabySoC** provides a hands-on example of integrating digital and analog IP cores in a single SoC.
