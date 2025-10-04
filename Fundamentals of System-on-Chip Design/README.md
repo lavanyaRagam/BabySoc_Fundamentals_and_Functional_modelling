@@ -39,7 +39,8 @@ SoCs are the foundation of **smartphones**, **tablets**, **wearables**, and many
 
 ## 🧱 Example SoC Architecture Diagram
 
-*(Insert block diagram image here)*  
+<img width="836" height="387" alt="Screenshot 2025-10-04 101336" src="https://github.com/user-attachments/assets/0fdb62fe-f8b0-4828-8af6-1a5720ae9918" />
+
 
 This diagram shows the **CPU**, **memory**, **interconnect**, **peripherals**, and specialized modules all connected within a single chip — highlighting the compact and efficient design of SoCs.
 
@@ -67,7 +68,8 @@ It typically includes:
 
 ## BabySoC Block Diagram
 
-*(Insert BabySoC block diagram here)*  
+<img width="1265" height="694" alt="Screenshot 2025-10-04 101844" src="https://github.com/user-attachments/assets/3bc47c30-e442-4210-a78e-27b665027187" />
+
 
 This simplified diagram highlights the **RISC-V CPU**, **PLL**, **DAC**, and their interconnections, providing a clear view of the learning platform’s structure.
 
