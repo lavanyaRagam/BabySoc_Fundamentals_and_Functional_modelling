@@ -156,6 +156,57 @@ This GTKWave snapshot shows the **pre-synthesis simulation results** of the VSDB
 - The digital signals from the **RISC-V core** propagate correctly, driving the **DAC outputs**.  
 - The waveform confirms **functional correctness before synthesis**, ensuring that the RTL matches the expected behavior.
 
+## Possible Causes and Debugging Steps
+
+### 1. Clock Signal Issues
+**Possible Cause:**  
+The clock signal may not be properly defined or generated, leading to missing or irregular clock pulses.
+
+**Debugging Steps:**  
+- Ensure that the clock signal is correctly defined and toggling continuously in the testbench.  
+- Verify the clock frequency and confirm that it meets the design’s timing requirements.  
+- Inspect the waveform to confirm the presence of a stable clock signal throughout the simulation.  
+
+---
+
+### 2. Reset Signal Issues
+**Possible Cause:**  
+If the reset signal remains asserted (active) for the entire simulation, the design may stay in reset mode and produce no output.
+
+**Debugging Steps:**  
+- Verify that the reset signal is only asserted during initialization and deasserted afterward.  
+- Check the waveform to ensure the reset is inactive after the setup period.  
+
+---
+
+### 3. Enable Signal Configuration
+**Possible Cause:**  
+Some designs use enable signals to control circuit operation. If the enable signal is active for only one clock cycle, the output will also be limited to that single cycle.
+
+**Debugging Steps:**  
+- Identify any enable signals in the design that control output activation.  
+- Make sure the enable signal remains active for the desired duration.  
+- Observe the enable signal in the waveform viewer to verify correct timing and duration.  
+
+---
+
+### 4. Simulation Time Limit
+**Possible Cause:**  
+If the simulation run time is too short, it may only include a single clock cycle of activity.
+
+**Debugging Steps:**  
+- Increase the simulation time to capture multiple clock cycles and observe extended behavior.  
+- Ensure that the simulation stop time allows sufficient duration for complete testing.  
+
+---
+
+### 5. Waveform Viewer Settings
+**Possible Cause:**  
+The waveform viewer might be set to show a narrow time window, giving the impression that output occurs for only one cycle.
+
+**Debugging Steps:**  
+- Expand the visible time range in the waveform viewer.  
+- Confirm that all relevant signals are displayed for the entire simulation duration.  
 
 ### 🔹 Post-Synthesis Simulation
 
