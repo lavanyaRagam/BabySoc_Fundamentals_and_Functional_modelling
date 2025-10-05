@@ -148,7 +148,8 @@ cd output/pre_synth_sim
 The simulation generates pre_synth_sim.vcd, viewable in GTKWave.
 
 ### View waveform:
-<img width="1920" height="923" alt="Screenshot from 2025-10-04 19-24-28" src="https://github.com/user-attachments/assets/1e9b0164-7627-4022-a24f-7206c2d33b69" />
+<img width="1920" height="923" alt="pre_synth_sim" src="https://github.com/user-attachments/assets/e1b8a7d8-b94a-4cf5-90dd-8866b5bf65dc" />
+
 
 This GTKWave snapshot shows the **pre-synthesis simulation results** of the VSDBabySoC testbench.
 
@@ -223,6 +224,8 @@ cd output/post_synth_sim
 ### synthesis:
 <img width="1920" height="923" alt="Screenshot from 2025-10-04 22-14-05" src="https://github.com/user-attachments/assets/63233909-b684-4db7-b7b6-f04464d4bef0" />
 
+### post synthesis waveform:
+<img width="1920" height="923" alt="post_synth_sim" src="https://github.com/user-attachments/assets/f1e72bf6-8bf1-4329-8c29-b2ef6c72fde9" />
 
 This schematic represents the **post-synthesis netlist** of the VSDBabySoC design, generated using **Yosys**.
 
